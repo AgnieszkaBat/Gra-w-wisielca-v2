@@ -1,9 +1,15 @@
+import java.io.File;
+import java.io.Scanner;
 
 public class Main {
 
-public static void main(String[] args) {
+public static void main(String[] args) throw Exteptions {
     //TODO Auto-generated method stub
-File dictionary = new File();
+File dictionary = new File("http://www.gwicks.net/textlists/english3.zip");
+
+Scanner textScanner = new Scanner (dictionary);
+ArrayList<String> words = newArrayList <>();
+
 }
 
 }
