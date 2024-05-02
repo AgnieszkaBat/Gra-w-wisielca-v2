@@ -1,17 +1,24 @@
 public class Main {
 
-public static void main(String[] args) throw Exteptions {
+public static void main(String[] args);
+
+public class Throw
+{Exeption Exeptions;
+
+{
+
+{
     //TODO Auto-generated method stub
 File dictionary = new File("http://www.gwicks.net/textlists/english3.zip");
 
 Scanner textScanner = new Scanner (dictionary);
 Scanner input = new Scanner(System.in);
-ArrayList<String> words = newArrayList <>();
-while(textScanner.hasNextLine(() {
-words.add(textScanner.nextLine(();
+   ArrayList<String> words = new ArrayList<>();
+while(textScanner.hasNextLine()) {
+words.add(textScanner.nextLine());
 }
 
-String hidden_text = words.get((int))Math.random() * words.size()));
+String_hidden_text = words.get((int)(Math.random()*words.size()));
 char[] textArray = hidden_text.toCharArray ();
 
 char [] myAnwsers = new char[textArray.length];
@@ -21,7 +28,7 @@ myAnwsers [i] = '?';
 boolean finished = false;
 int lives=6;
 while(finished == false) {
-System.out.printIn("*****************)
+System.out.printIn("*****************");
 
 String letter = input.next();
 //check for valid input
@@ -32,7 +39,7 @@ letter = input.next();
 //checks if letter is in the word
 boolean found = false;
 for(inti =0; i < textArray.length; i++) {
-if(letter.charAt(0) == textArray [i] {
+if(letter.charAt(0) == textArray [i] ){
 myAnswers[i] = textArray[i];
 found = true;
 }
@@ -59,76 +66,8 @@ System.out.printIn("Good Job");
 finished = true;
 }
 if(lives <= 0) {
-Syste.out.printIn("Dead")
+Syste.out.printIn("Dead");
 finished = true;
 }
 }
 
-}
-public static void drawHangman(int l) {
-  if(l == 6) {
-   System.out.println("|----------");
-   System.out.println("|");
-   System.out.println("|");
-   System.out.println("|");
-   System.out.println("|");
-   System.out.println("|");
-   System.out.println("|");
-  }
-  else if(l == 5) {
-   System.out.println("|----------");
-   System.out.println("|    O");
-   System.out.println("|");
-   System.out.println("|");
-   System.out.println("|");
-   System.out.println("|");
-   System.out.println("|");
-  }
-  else if(l == 4) {
-   System.out.println("|----------");
-   System.out.println("|    O");
-   System.out.println("|    |");
-   System.out.println("|");
-   System.out.println("|");
-   System.out.println("|");
-   System.out.println("|");
-  }
-  else if(l == 3) {
-   System.out.println("|----------");
-   System.out.println("|    O");
-   System.out.println("|   -|");
-   System.out.println("|");
-   System.out.println("|");
-   System.out.println("|");
-   System.out.println("|");
-  }
-  else if(l == 2) {
-   System.out.println("|----------");
-   System.out.println("|    O");
-   System.out.println("|   -|-");
-   System.out.println("|");
-   System.out.println("|");
-   System.out.println("|");
-   System.out.println("|");
-  }
-  else if(l == 1) {
-   System.out.println("|----------");
-   System.out.println("|    O");
-   System.out.println("|   -|-");
-   System.out.println("|   /");
-   System.out.println("|");
-   System.out.println("|");
-   System.out.println("|");
-  }
-  else{
-   System.out.println("|----------");
-   System.out.println("|    O");
-   System.out.println("|   -|-");
-   System.out.println("|   /|");
-   System.out.println("|");
-   System.out.println("|");
-   System.out.println("|");
-  }
- }
-
-}
